@@ -50,4 +50,4 @@
 
 ## Лицензия
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/SemenecVlad/preview_1/blob/master/LICENSE) file for details
