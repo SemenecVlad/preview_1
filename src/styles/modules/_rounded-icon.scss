@@ -1,0 +1,22 @@
+.icon {
+  padding: 1em;
+  position: relative;
+  top: 15px;
+  float: right;
+  margin-left: 10px;
+  @include outline($outline-color-1);
+}
+.rounded-icon {
+  @include border-radius(50%);
+  position: relative;
+  left: 37%;
+  color: $white;
+  width: 6em;
+  height: 6em;
+  border: 2px solid $white;
+
+  i {
+    position: relative;
+    top: 35%;
+  }
+}

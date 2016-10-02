@@ -1,0 +1,39 @@
+.button {
+    width: 55%;
+    display: block;
+    background-color: $button-default-color;
+    color: $button-text-color;
+    border-radius: 10px;
+    border: 1px solid $button-border-color;
+    padding: .5em;
+    margin: 50px auto 0px auto;
+    cursor: pointer;
+  &:hover {
+    color: $crimson-red;
+    border: 1px solid $crimson-red;
+    -webkit-transition-property: border, color;
+    -moz-transition-property: border, color;
+    -o-transition-property: border, color;
+    transition-property: border, color;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+}
+.button-submit {
+  @extend .button;
+  padding: 20px;
+  background-color: $button-success-color;;
+  color: $white;
+  border: none;
+  &:hover {
+    background-color: $button-success-hover-color;
+    border: none;
+    color: $white;
+  }
+}

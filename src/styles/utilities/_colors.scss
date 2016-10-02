@@ -1,0 +1,54 @@
+/*********************************
+* Global colors
+**********************************/
+
+
+$black: rgb(13, 13, 13);
+$white: rgb(255, 255, 255);
+$gray-light: rgb(230, 230, 230);
+$gray-light-1: rgb(215, 215, 215);
+$gray-dark: rgb(105, 105, 105);
+$gray-dark2: rgb(80, 80, 80);
+$crimson-red: rgb(220, 20, 60);
+$indian-red: rgb(205, 92, 92);
+$blue: rgb(0, 0, 255);
+$green: rgb(0, 255, 0);
+$violet: rgb(106, 90, 205);
+$brown-light: rgb(139, 69, 19);
+$mediumspringgreen: mediumspringgreen;
+$springgreen: springgreen;
+
+
+/**********************************
+* Specified colors
+***********************************/
+
+
+$header-color: $white;
+
+$default-text-color: $black;
+
+$section-color: $white;
+$section-special-color: $gray-light;
+
+$navigation-hover-color: $gray-light;
+
+$outline-color-1: $crimson-red;
+
+$link-default-color: $gray-dark;
+$link-active-color: $violet;
+$link-hover-color: $violet;
+
+$modal-color: $gray-light-1;
+
+$heading-default-color: $gray-dark;
+$heading-special-color: $brown-light;
+
+$button-default-color: $gray-light;
+$button-border-color: $gray-dark2;
+$button-text-color: $gray-dark;
+$button-hover-color: $indian-red;
+$button-success-color: $mediumspringgreen;
+$button-success-hover-color: $springgreen;
+
+$footer-color: $black;

@@ -1,0 +1,37 @@
+.top-navigation {
+  @include outline($outline-color-1);
+  float: left;
+  position: relative;
+  // left: 30%;
+  bottom: 12px;
+  width: 60%;
+  height: 80px;
+  font-size: .8em;
+  // margin-right: 0;
+
+  ul {
+    // -webkit-padding-start: 0;
+    // -webkit-margin-before: 0;
+    // -webkit-margin-after: 0;
+    padding-bottom: 10px;
+
+    li {
+      display: inline-block;
+      // padding: 1.5em 1.1em;
+    a {
+      display: block;
+      padding: 1.84em 1em;
+    }
+      &:hover {
+        background-color: $navigation-hover-color;
+
+        a {
+          color: $link-hover-color;
+        }
+      }
+      a {
+        font-size: 1.3em;
+      }
+    }
+  }
+}

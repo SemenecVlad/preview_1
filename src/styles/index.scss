@@ -1,0 +1,37 @@
+/*
+*  Colors, variables, mixins...etc
+*/
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+// @font-face {
+//   font-family: 'Oswald';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Oswald Regular'), local('Oswald-Regular'), url(fonts/Oswald-Bold.ttf);
+//   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+//    }
+@import "utilities/_colors.scss";
+@import "utilities/_variables.scss";
+@import "utilities/_mixins.scss";
+/*
+*  Base styles
+*/
+@import "base/_normalize.css";
+// @import "base/bootstrap.min.css";
+@import "base/_font-awesome.min.css";
+@import "base/_base.scss";
+
+/*
+*  Layout styles
+*/
+// @import "layout/_grid.css";
+@import "layout/_layout.scss";
+
+/*
+*  Modules styles
+*/
+@import "modules/_modules.scss";
+
+/*
+*  States styles
+*/
+@import "states/_states.scss";

@@ -1,0 +1,15 @@
+.logo {
+  position: relative;
+  float: left;
+  width: 250px;
+  top: 15px;
+  font-size: 250%;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid green;
+
+  a:hover {
+    color: $link-hover-color;
+    transition: color 0.2s ease-out 0.3s;
+  }
+}

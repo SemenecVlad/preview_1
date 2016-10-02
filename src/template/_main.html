@@ -1,0 +1,238 @@
+<main>
+  <section class="slider">
+    <!--<div ng-app="sliderApp">-->
+      <!--<div ng-controller="CarouselCtrl" id="slides_control">-->
+        <!--<div>-->
+          <!--<carousel interval="myInterval">-->
+            <!--<slide ng-repeat="slide in slides" active="slide.active">-->
+              <!--<img ng-src="{{slide.image}}">-->
+              <!--<div class="carousel-caption">-->
+                <!--<h4>Slide {{$index+1}}</h4>-->
+              <!--</div>-->
+            <!--</slide>-->
+          <!--</carousel>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <div ng-controller="CarouselDemoCtrl">
+      <div style="height: 45rem">
+        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+          <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+            <img ng-src="{{slide.image}}" style="margin:auto;">
+            <div class="carousel-caption">
+              <h4>Slide {{slide.id}}</h4>
+              <p>{{slide.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sales">
+    <div class="l-wrapper">
+      <div class="l-block-container">
+        <div class="l-block-1">
+          <img class="image" src="./img/1.jpg" alt="">
+          <div class="text-1">
+            <small>NEW COLLECTION</small>
+            <p>FOR WOMAN</p>
+            <a class="button" href="#">GET IT NOW</a>
+          </div>
+        </div>
+        <div class="l-block-1">
+          <div class="text-1">
+            <small>NEW COLLECTION</small>
+            <p>FOR WOMAN</p>
+            <a class="button" href="#">GET IT NOW</a>
+          </div>
+          <img class="image" src="./img/1.jpg" alt="">
+        </div>
+        <div class="l-block-1">
+          <img class="image" src="./img/1.jpg" alt="">
+          <div class="text-1">
+            <small>NEW COLLECTION</small>
+            <p>FOR MEN</p>
+            <a class="button" href="#">GET IT NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="featured-products">
+    <div class="l-wrapper">
+      <div class="section-headings">
+        <a href="#">FEATURED PRODUCTS</a>
+      </div>
+      <div class="l-block-container">
+        <div class="l-block-2">
+          <img src="./img/wbag_1.jpg" alt="woman bag">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>          </div>
+        </div>
+        <div class="l-block-2">
+          <img src="./img/glasses_1.jpg" alt="glasses">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>          </div>
+        </div>
+        <div class="l-block-2">
+          <img src="./img/wbag_2.jpg" alt="woman bag">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>          </div>
+        </div>
+        <div class="l-block-2">
+          <img src="./img/glasses_2.jpg" alt="glasses">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="options">
+    <div class="l-wrapper">
+      <div class="l-block-container">
+        <div class="l-block-1 white-text">
+          <div class="rounded-icon">
+            <i class="fa fa-reply fa-2x" aria-hidden="true"></i>
+          </div>
+          <p>MONEY BACK</p>
+          <hr>
+          <small>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</small>
+        </div>
+        <div class="l-block-1 white-text">
+          <div class="rounded-icon">
+            <i class="fa fa-reply fa-2x" aria-hidden="true"></i>
+          </div>
+          <p>MONEY BACK</p>
+          <hr>
+          <small>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</small>
+        </div>
+        <div class="l-block-1 white-text">
+          <div class="rounded-icon">
+            <i class="fa fa-reply fa-2x" aria-hidden="true"></i>
+          </div>
+          <p>MONEY BACK</p>
+          <hr>
+          <small>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="new-products">
+    <div class="l-wrapper">
+      <div class="section-headings">
+        <a href="#" >BESTSELLER&nbsp&nbsp&nbsp|</a>
+        <a:active href="#">&nbsp&nbsp&nbspNEW PRODUCTS&nbsp&nbsp&nbsp|</a:active>
+        <a href="#">&nbsp&nbsp&nbspMUST HAVE</a>
+      </div>
+      <div class="l-block-container">
+        <div class="l-block-2">
+          <img src="./img/wshoes_1.jpg" alt="woman shoes">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="l-block-2">
+          <img src="./img/wshoes_2.jpg" alt="woman shoes">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="l-block-2">
+          <img src="./img/wbag_3.jpg" alt="woman bag">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="l-block-2">
+          <img src="./img/wbag_4.jpg" alt="woman bag">
+          <div class="text-2">
+            <a href="#">LEATHER BAG</a><br>
+            <a href="#">$90 - $120</a>
+            <button class="button" href="#">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog-news">
+    <div class="l-wrapper">
+      <div class="section-headings">
+        <a href="#">LATEST FROM BLOGS</a>
+      </div>
+      <div class="l-block-container">
+        <div class="l-block-1">
+          <img src="./img/girl1.jpg" alt="woman1">
+          <div class="text-3">
+            <h3><a href="#">That most modern</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis quibusdam eius officiis, temporibus ea et, placeat
+               sed corrupti sunt, in explicabo consectetur rerum rem excepturi
+                aliquid. Excepturi dolorem nihil natus.</p>
+              <button class="button">Read More</button>
+          </div>
+        </div>
+        <div class="l-block-1">
+          <img src="./img/girl2.jpg" alt="woman2">
+          <div class="text-3">
+            <h3><a href="#">That most modern</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis quibusdam eius officiis, temporibus ea et, placeat
+               sed corrupti sunt, in explicabo consectetur rerum rem excepturi
+                aliquid. Excepturi dolorem nihil natus.</p>
+              <button class="button">Read More</button>          </div>
+        </div>
+        <div class="l-block-1">
+          <img src="./img/girl3.jpg" alt="woman3">
+          <div class="text-3">
+            <h3><a href="#">That most modern</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis quibusdam eius officiis, temporibus ea et, placeat
+               sed corrupti sunt, in explicabo consectetur rerum rem excepturi
+                aliquid. Excepturi dolorem nihil natus.</p>
+              <button class="button">Read More</button>          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="categories">
+    <div class="l-wrapper">
+      <div class="section-headings">
+        <a class="white-text" href="#">OUR CATEGORIES</a>
+        <hr>
+      </div>
+      <div class="l-block-container">
+        <div class="l-block-3"><a href="#">WOMEN</a></div>
+        <div class="l-block-3"><a href="#">MEN</a></div>
+        <div class="l-block-3"><a href="#">JEWELERY</a></div>
+        <div class="l-block-3"><a href="#">ACCESSORIES</a></div>
+      </div>
+    </div>
+  </section>
+  <section class="brands">
+    <div class="l-wrapper">
+      <img src="./img/brands/armani.jpg" alt="Armani" />
+      <img src="./img/brands/chanel.png" alt="Chanel" />
+      <img src="./img/brands/dior.jpg" alt="Dior" />
+      <img src="./img/brands/pierre_cardin.png" alt="Pierre Cardin" />
+      <img src="./img/brands/louis_vuitton.jpg" alt="Gucci" />
+
+    </div>
+  </section>
+</main>
