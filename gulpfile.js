@@ -52,13 +52,13 @@ var config = {
 }
 
 gulp.task('html:build', function () {
-  gulp.src(path.src.html)
+  return gulp.src(path.src.html)
       .pipe(rigger())
       .pipe(gulp.dest(path.build.html))
       .pipe(reload({stream: true}))
 })
 gulp.task('js:build', function () {
-  gulp.src(path.src.js)
+  return gulp.src(path.src.js)
       .pipe(rigger())
       .pipe(sourcemaps.init())
       // .pipe(uglify())
@@ -67,12 +67,12 @@ gulp.task('js:build', function () {
       .pipe(reload({stream: true}))
 })
 gulp.task('data:build', function () {
-	gulp.src(path.src.data)
-		.pipe(gulp.dest(path.build.data))
-		.pipe(reload({stream: true}))
+   return gulp.src(path.src.data)
+	.pipe(gulp.dest(path.build.data))
+	.pipe(reload({stream: true}))
 })
 gulp.task('styles:build', function () {
-  gulp.src(path.src.styles)
+   return gulp.src(path.src.styles)
       .pipe(sourcemaps.init())
       .pipe(sass())
       .pipe(prefixer())
@@ -82,7 +82,7 @@ gulp.task('styles:build', function () {
       .pipe(reload({stream: true}))
 })
 gulp.task('image:build', function () {
-  gulp.src(path.src.img)
+   return gulp.src(path.src.img)
       .pipe(imagemin({
         progressive: true,
         svgoPlugins: [{removeViewBox: false}],
@@ -92,7 +92,7 @@ gulp.task('image:build', function () {
       .pipe(reload({stream: true}))
 })
 gulp.task('fonts:build', function () {
-  gulp.src(path.src.fonts)
+   return gulp.src(path.src.fonts)
       .pipe(gulp.dest(path.build.fonts))
       .pipe(reload({stream: true}))
 })
