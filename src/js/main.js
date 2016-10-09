@@ -1,4 +1,2 @@
-//= partials/MainPageCtrl.js
-//= partials/app.js
-//= partials/slider.js
+//= controllers/LuxuryShopApp.js
 //= partials/_registerModule.js
