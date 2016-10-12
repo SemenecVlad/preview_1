@@ -24,4 +24,11 @@
 	display: inline-block;
 	margin-right: 5px;
 	width: 35px;
+	filter: contrast(60%);
+	-webkit-filter: contrast(60%);
+		
+	&:hover {
+		filter: contrast(300%);
+		-webkit-filter: contrast(300%);
+	}	
 }
