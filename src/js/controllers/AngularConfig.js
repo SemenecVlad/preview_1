@@ -9,7 +9,7 @@ LuxuryShopApp.config(['$routeProvider', '$locationProvider', function ($routePro
       controller: 'MainPageCtrl'
     })
     .when('/women/:womenClothId', {
-      templateUrl: 'template/_product-detailed.html',
+      templateUrl: 'template/_women-product-detailed.html',
       controller: 'CategoryCtrl'
     })
     .when('/men', {
@@ -17,24 +17,24 @@ LuxuryShopApp.config(['$routeProvider', '$locationProvider', function ($routePro
       controller: 'MainPageCtrl'
     })
     .when('/men/:menClothId', {
-      templateUrl: 'template/_product-details.html',
-      controller: 'ProductDetCtrl'
+      templateUrl: 'template/_men-product-detailed.html',
+      controller: 'CategoryCtrl'
     })
     .when('/jewellery', {
-      templateUrl: 'template/_category-jevelery.html',
+      templateUrl: 'template/_category-jewellery.html',
       controller: 'MainPageCtrl'
     })
-    .when('/jevelery/:jeveleryId', {
-      templateUrl: 'template/_product-detailed.html',
-      controller: 'ProductDetCtrl'
+    .when('/jewellery/:jewelleryId', {
+      templateUrl: 'template/_jewellery-product-detailed.html',
+      controller: 'CategoryCtrl'
     })
     .when('/watches', {
       templateUrl: 'template/_category-watches.html',
       controller: 'MainPageCtrl'
     })
     .when('/watches/:watchId', {
-      templateUrl: 'template/_product-details.html',
-      controller: 'ProductDetCtrl'
+      templateUrl: 'template/_watches-product-detailed.html',
+      controller: 'CategoryCtrl'
     })
     .when('/blog', {
       templateUrl: 'template/_blog.html',
