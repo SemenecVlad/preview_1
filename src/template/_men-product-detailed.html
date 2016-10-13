@@ -1,0 +1,27 @@
+<main>
+  <section class="product-detailed">
+    <div class="l-wrapper l-woman-wrapper">
+      //= template/sidebar_men.html
+      <div class="l-content" ng-controller="CategoryCtrl">
+        <h3 class="section-headings">{{menClothId}}</h3>
+        <div >
+          <img ng-src="{{image}}" alt="{{cloth.title}}"/>
+        </div>
+        <div class="l-product-container">
+
+          <p class="product-preview">{{fullDescription}}</p>
+        </div>
+        <div class="comment-container">
+
+          <h2>Send Your Review About Product Here:</h2>
+          <form action="" class="comment-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Yout Email" required>
+            <textarea name="name" rows="8" cols="40"></textarea>
+            <button type="submit" class="button-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

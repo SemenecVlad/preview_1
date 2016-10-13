@@ -1,0 +1,45 @@
+<main>
+  <section class="product-detailed">
+    <div class="l-wrapper l-woman-wrapper">
+      //= template/sidebar_women.html
+      <div class="l-content" ng-controller="CategoryCtrl">
+        <h3 class="section-headings">{{womenClothId}}</h3>
+        <figure class="product-image" >
+						<img ng-src="{{cloth.image}}" alt="{{womenclothes.title}}"/>
+						<figcaption>
+							<div>
+								<h2>Nice <span>Lily</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>
+					</figure>
+        <div class="l-product-container">
+
+          <p class="product-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ea quae numquam consequuntur in eaque, quibusdam quisquam quasi exercitationem
+             suscipit nulla sapiente ad! Illo accusamus, sapiente voluptates accusantium
+             officiis inventore odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Nemo, iure! Similique omnis atque consequatur quos cumque magni ducimus, fugiat
+             earum molestias natus illo a labore est odio explicabo quam, nemo!
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ea quae numquam consequuntur in eaque, quibusdam quisquam quasi exercitationem
+                suscipit nulla sapiente ad! Illo accusamus, sapiente voluptates accusantium
+                officiis inventore odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nemo, iure! Similique omnis atque consequatur quos cumque magni ducimus, fugiat
+                earum molestias natus illo a labore est odio explicabo quam, nemo</p>
+        </div>
+        <div class="comment-container">
+
+          <h2>Send Your Review About Product Here:</h2>
+          <form action="" class="comment-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Yout Email" required>
+            <textarea name="name" rows="8" cols="40"></textarea>
+            <button type="submit" class="button-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
