@@ -1,33 +1,15 @@
 <main>
   <section class="product-detailed">
     <div class="l-wrapper l-woman-wrapper">
-      //= template/sidebar_watches.html
+      //= template/sidebar_women.html
       <div class="l-content" ng-controller="CategoryCtrl">
         <h3 class="section-headings">{{watchId}}</h3>
-        <figure class="product-image" >
-						<img ng-src="{{cloth.image}}" alt="{{watches.title}}"/>
-						<figcaption>
-							<div>
-								<h2>Nice <span>Lily</span></h2>
-								<p>Lily likes to play with crayons and pencils</p>
-							</div>
-							<a href="#">View more</a>
-						</figcaption>
-					</figure>
+        <div >
+          <img ng-src="{{wt_image}}" alt="{{cloth.title}}"/>
+        </div>
         <div class="l-product-container">
 
-          <p class="product-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Ea quae numquam consequuntur in eaque, quibusdam quisquam quasi exercitationem
-             suscipit nulla sapiente ad! Illo accusamus, sapiente voluptates accusantium
-             officiis inventore odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Nemo, iure! Similique omnis atque consequatur quos cumque magni ducimus, fugiat
-             earum molestias natus illo a labore est odio explicabo quam, nemo!
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ea quae numquam consequuntur in eaque, quibusdam quisquam quasi exercitationem
-                suscipit nulla sapiente ad! Illo accusamus, sapiente voluptates accusantium
-                officiis inventore odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nemo, iure! Similique omnis atque consequatur quos cumque magni ducimus, fugiat
-                earum molestias natus illo a labore est odio explicabo quam, nemo</p>
+          <p class="product-preview">{{wt_fullDescription}}</p>
         </div>
         <div class="comment-container">
 
