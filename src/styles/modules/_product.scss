@@ -3,21 +3,28 @@
   width: 170px;
   margin: 20px;
   @include outline($outline-color-1);
-  .title {
-    display: block;
-    text-align: center;
-    @include outline($outline-color-1);
-  }
-  .button {
-    width: 80%;
-    position: static;
-    margin-left: 10%;
-    margin-top: 20px;
-  }
-  .price {
-    display: block;
-    text-align: center;
-    color: $default-text-color;
-    margin-top: 10px;
+
+    .title {
+      display: block;
+      text-align: center;
+      @include outline($outline-color-1);
+    }
+
+    .button {
+      width: 80%;
+      position: static;
+      margin-left: 10%;
+      margin-top: 20px;
+    }
+
+    .price {
+      display: block;
+      text-align: center;
+      color: $default-text-color;
+      margin-top: 10px;
+    }
+
+  @media screen and (max-width: 1024px) {
+    margin: .5em;
   }
 }
