@@ -26,9 +26,13 @@
 	width: 32px;
 	filter: contrast(60%);
 	-webkit-filter: contrast(60%);
-		
+
 	&:hover {
 		filter: contrast(300%);
 		-webkit-filter: contrast(300%);
-	}	
+	}
+  @media screen and (max-width: 1024px) {
+    margin-right: 1%;
+    width: 28px;
+  }
 }
