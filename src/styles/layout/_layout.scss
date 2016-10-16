@@ -1,3 +1,6 @@
+/**************************************************
+*****************HEADER SECTION
+***************************************************/
 .l-header {
   height: 80px;
   position: fixed;
@@ -9,27 +12,36 @@
     height: 80px;
   }
 }
+
+/**************************************************
+*****************CONTAINER
+***************************************************/
 .l-wrapper {
   width: 90%;
   margin: 0 auto;
   @include outline($outline-color-1);
-}
-@media screen and (min-width: 1260px) {
-  .l-wrapper {
-    width: 1150px;
+
+  @media screen and (min-width: 1260px) {
+      width: 1150px;
+  }
+  @media screen and (max-width: 1258px) {
+      width: 100%;
   }
 }
-@media screen and (max-width: 1258px) {
-  .l-wrapper {
-    width: 99.5%;
-  }
-}
+
+/**************************************************
+*****************CONTAINER FOR BLOCKS
+***************************************************/
 .l-block-container {
   width: 99%;
   height: auto;
   margin: 0 auto;
   @include outline($outline-color-1);
 }
+
+/**************************************************
+*****************BLOCK STYLE
+***************************************************/
 .l-block {
   display: inline-block;
   margin-right: 1%;
@@ -39,16 +51,19 @@
     margin-right: 0;
   }
 }
+
 .l-block-1{
   @extend .l-block;
   width: 32.2%;
 }
+
 .l-block-2 {
   @extend .l-block;
   margin-right: 2.2%;
   width: (100%/4)-2%;
   height: 25rem;
 }
+
 .l-block-3 {
   @extend .l-block;
   margin-right: 2.2%;
@@ -57,7 +72,9 @@
   padding: .5em 0;
   text-align: center;
 }
+
 .l-block-4 {
+  // This block using in Footer
   @extend .l-block;
   width: (100%/5)-2%;
   margin-right: 2.2%;
@@ -65,10 +82,9 @@
    li {
      padding-bottom: 5px;
    }
-}
-
-section {
-  min-height: 200px;
+   @media screen and (max-width: 1258px) {
+     margin-right: 1%;
+   }
 }
 
 .l-woman-wrapper {
@@ -79,41 +95,46 @@ section {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+
+/**************************************************
+*****************SIDEBAR
+***************************************************/
 .l-sidebar {
   order: 1;
   flex-grow: 2;
   flex-basis: 220px;
   padding: 20px;
-  
+
   ul {
     margin: 0;
     padding: 0;
   }
   @include outline($outline-color-1);
 }
+
+
+/**************************************************
+*****************CONTENT PART
+*********At the pages with sidebar
+***************************************************/
 .l-content {
   order: 2;
   flex-grow: 4;
   flex-basis: 950px;
   padding: 20px;
   background: $section-color;
-  // width: 75%;
-  // display: inline-block;
-  // vertical-align: top;
-  // padding: 15px;
-  // @include outline($crimson-red);
-  // float: right;
 }
+
 .l-product-container {
   display: inline-block;
   vertical-align: top;
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // justify-content: flex-start;
-  // align-items: flex-start;
 }
 
+
+/**************************************************
+*****************FOOTER SECTION
+***************************************************/
 .l-footer {
   width: 100%;
   height: 250px;
