@@ -12,4 +12,9 @@
     color: $link-hover-color;
     transition: color 0.2s ease-out 0.3s;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 200px;
+    padding-left: 15px;
+  }
 }
