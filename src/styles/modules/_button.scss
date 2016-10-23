@@ -8,6 +8,7 @@
     padding: .5em;
     margin: 50px auto 0px auto;
     cursor: pointer;
+
   &:hover {
     color: $crimson-red;
     border: 1px solid $crimson-red;
@@ -27,13 +28,30 @@
 }
 .button-submit {
   @extend .button;
-  padding: 20px;
+  width: 100%;
+  padding: 11px;
+  margin: 10px auto 0px auto;
   background-color: $button-success-color;;
   color: $white;
   border: none;
+  border-radius: 0px;
+  transition: 0.3s linear;
+
   &:hover {
     background-color: $button-success-hover-color;
     border: none;
     color: $white;
+    transition: 0.2s linear;
   }
+}
+form.newsletter {
+  position: relative;
+}
+.button-submit-footer {
+  @extend .button-submit;
+  margin: 0;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  width: 65px;
 }
