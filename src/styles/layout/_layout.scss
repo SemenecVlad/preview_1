@@ -58,19 +58,31 @@
 }
 
 .l-block-2 {
+  // Used in _main.html
   @extend .l-block;
   margin-right: 2.2%;
   width: (100%/4)-2%;
   height: 25rem;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+  }
 }
 
 .l-block-3 {
+  //Used in _main.html in "Our Categories"
   @extend .l-block;
   margin-right: 2.2%;
   width: (100%/4)-2%;
   background-color: $button-default-color;
   padding: .5em 0;
   text-align: center;
+
+  &:hover {
+    padding: .65em 0;
+    border-bottom: 4px solid $link-active-color;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+  }
 }
 
 .l-block-4 {
