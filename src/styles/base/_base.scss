@@ -35,6 +35,43 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
 }
+input {
+    width: 99%;
+    text-overflow: elipsis;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid $gray-light;
+    &:hover{
+    border: 1px solid rgba(52, 152, 219, 1);
+    box-shadow: 1px 1px 3px 1px rgba(52, 152, 219, 0.2) inset;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    &::placeholder {
+      text-indent: 0px;
+      transition: text-indent 0.2s ease;
+      padding-left: 10px;
+      color: $gray-dark;
+    }
+    &:focus::placeholder {
+      text-indent: 800px;
+      transition: text-indent 0.5s ease;
+    }
+    &[type="submit"] {
+      width: 100%;
+      position: relative;
+      left: 0px;
+      top: 5px;
+      // float: right;
+
+    }
+  }
+label {
+  color: $gray-dark;
+}
 figure {
 	position: relative;
 	float: left;
