@@ -6,7 +6,7 @@
 
 ### Предварительные требования:
 
-Для запуска потребуется [NodeJS](https://nodejs.org/). ![Image of NodeJS](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png)                              
+Для запуска потребуется [NodeJS](https://nodejs.org/). ![Image of NodeJS](http://thisdavej.com/wp-content/uploads/2016/02/nodejs-logo.png)                              
 
 Также возможно придется установить глобально Gulp к себе на компьютер(если не установлен еще). Сделать это можно с помощью команды в консоли:
 
