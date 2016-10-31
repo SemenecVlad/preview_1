@@ -26,8 +26,10 @@
 	width: 32px;
 	filter: contrast(60%);
 	-webkit-filter: contrast(60%);
+	transition: 0.3s linear;
 
 	&:hover {
+		transform: translateY(-5px);
 		filter: contrast(300%);
 		-webkit-filter: contrast(300%);
 	}
