@@ -1,3 +1,9 @@
+/**
+*@name Category Controller
+*@description Define 'CategoryCtrl' options. This controller used for displaying deatailed information about product.
+*@author Vladislav Semenets <semenecvlad@mail.ru>
+*/
+
 LuxuryShopApp.controller("CategoryCtrl", ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams) {
   $http.get('data/womenclothes.json').success(function(data, status, headers, config) {
     $scope.womenclothes = data;
