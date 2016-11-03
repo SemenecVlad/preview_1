@@ -1,3 +1,9 @@
+/**
+*@name Configuration file
+*@description Configuration for Router
+*@author Vladislav Semenets <semenecvlad@mail.ru>
+*/
+
 LuxuryShopApp.config(['$routeProvider', '$locationProvider', function ($routeProvide, $locationProvider) {
   $routeProvide
     .when('/', {
