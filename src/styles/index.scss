@@ -1,9 +1,11 @@
-/********************************************
-**********MAIN STYLESHEET********************
-*******************************************/
+/**
+*@name Main Stylesheet.
+*@file Define styles for the website.
+*@author Vladislav Semenets <semenecvlad@mail.ru>
+*/
 
 /*
-*  Colors, variables, mixins...etc
+*@description Colors, variables, mixins...etc
 */
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 
@@ -13,22 +15,22 @@
 @import "utilities/_font-awesome.css";
 
 /*
-*  Base styles
+*@description Define Base styles
 */
 @import "base/_normalize.css";
 @import "base/_base.scss";
 
 /*
-*  Layout styles
+*@description Deifne Layout styles
 */
 @import "layout/_layout.scss";
 
 /*
-*  Modules styles
+*@description Define Modules styles
 */
 @import "modules/_modules.scss";
 
 /*
-*  States styles
+*@description Define States styles
 */
 @import "states/_states.scss";
