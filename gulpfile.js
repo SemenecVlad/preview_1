@@ -20,7 +20,7 @@ var path = {
       css: 'build/css',
       img: 'build/img',
       fonts: 'build/fonts',
-	    data: 'build/data'
+      data: 'build/data'
     },
     src: {
       html: 'src/**/*.html',
@@ -28,7 +28,7 @@ var path = {
       styles: 'src/styles/index.scss',
       img: 'src/img/**/*.*',
       fonts: 'src/fonts/**/*.*',
-	    data: 'src/data/*.*'
+      data: 'src/data/*.*'
     },
     watch: {
       html: 'src/**/*.html',
@@ -36,7 +36,7 @@ var path = {
       styles: 'src/styles/**/*.scss',
       img: 'src/img/**/*.*',
       fonts: 'src/fonts/**/*.*',
-	    data: 'src/data/*.*'
+      data: 'src/data/*.*'
     },
     clean: './build'
 }
@@ -68,8 +68,8 @@ gulp.task('js:build', function () {
 })
 gulp.task('data:build', function () {
    return gulp.src(path.src.data)
-	.pipe(gulp.dest(path.build.data))
-	.pipe(reload({stream: true}))
+      .pipe(gulp.dest(path.build.data))
+      .pipe(reload({stream: true}))
 })
 gulp.task('styles:build', function () {
    return gulp.src(path.src.styles)
@@ -121,7 +121,7 @@ gulp.task('watch', function () {
     gulp.start('fonts:build')
   })
   watch([path.watch.data], function (event, cb) {
-	gulp.start('data:build')
+    gulp.start('data:build')
   })
 })
 gulp.task('webserver', function () {
